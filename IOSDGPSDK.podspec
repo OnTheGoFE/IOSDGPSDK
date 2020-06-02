@@ -1,14 +1,6 @@
-#
-# Be sure to run `pod lib lint IOSDGPSDK.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
-#
-
 Pod::Spec.new do |s|
   s.name             = 'IOSDGPSDK'
-  s.version          = '1.27.0.200'
+  s.version          = '1.27.0.300'
   s.summary          = 'IOS SDK DIGIPRO Formatos Electrónicos (CORE)'
   s.description      = <<-DESC
 El Core framework es utilizado para la generación de formatos electrónicos.
