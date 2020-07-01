@@ -924,6 +924,7 @@ SWIFT_CLASS("_TtC10DIGIPROSDK18Atributos_firmafad")
 @property (nonatomic, copy) NSString * _Nonnull colorborrar;
 @property (nonatomic, copy) NSString * _Nonnull colorreemplazar;
 @property (nonatomic) BOOL permisotipificar;
+@property (nonatomic) NSInteger intervalomaximo;
 @property (nonatomic, copy) NSString * _Nonnull anexo;
 @property (nonatomic) BOOL bindcondition;
 @property (nonatomic, copy) NSString * _Nonnull campocss;
@@ -3409,6 +3410,7 @@ SWIFT_CLASS("_TtC10DIGIPROSDK20FEProductCalculadora")
 @property (nonatomic, copy) NSString * _Nonnull plazoMaximo;
 @property (nonatomic, copy) NSString * _Nonnull montoMinimo;
 @property (nonatomic, copy) NSString * _Nonnull montoMaximo;
+@property (nonatomic, copy) NSString * _Nonnull openingCommissionAmount;
 @property (nonatomic, copy) NSString * _Nonnull productFrequency;
 @property (nonatomic, copy) NSString * _Nonnull productFrequencyCode;
 @property (nonatomic) NSInteger order;
