@@ -2917,6 +2917,7 @@ SWIFT_CLASS("_TtC10DIGIPROSDK21FEConvenioCalculadora")
 @property (nonatomic, copy) NSArray<FEProductCalculadora *> * _Nonnull Productos;
 @property (nonatomic) NSInteger montoMaximo;
 @property (nonatomic) NSInteger montoMinimo;
+@property (nonatomic) BOOL aplicaOriginacionPaperless;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -2932,6 +2933,8 @@ SWIFT_CLASS("_TtC10DIGIPROSDK14FECotizaciones")
 @property (nonatomic, copy) NSString * _Nonnull priceGroupId;
 @property (nonatomic) double requestedAmount;
 @property (nonatomic) double totalAmount;
+@property (nonatomic) double tasaanual;
+@property (nonatomic) double tasamensual;
 @property (nonatomic) double descx;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
