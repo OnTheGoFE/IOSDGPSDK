@@ -3115,7 +3115,6 @@ SWIFT_CLASS("_TtC10DIGIPROSDK13FEFormatoData")
 @property (nonatomic) BOOL isSelected;
 @property (nonatomic) NSInteger FechaFormatoLong;
 @property (nonatomic, copy) NSString * _Nonnull FechaFormato;
-@property (nonatomic) NSInteger TipoRemplazo;
 - (BOOL)skipPropertyValue:(id _Nonnull)value key:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
