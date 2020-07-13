@@ -2221,6 +2221,7 @@ SWIFT_CLASS("_TtC10DIGIPROSDK16Atributos_wizard")
 @property (nonatomic) BOOL visibleregresar;
 @property (nonatomic, copy) NSArray<NSString *> * _Nonnull navegacion;
 @property (nonatomic) BOOL visiblepaginado;
+@property (nonatomic, copy) NSString * _Nonnull usuarioasignar;
 /// ///////////////////// ESTAN AQUÍ Y NO EN WEB //////////////////////////////////
 @property (nonatomic, copy) NSString * _Nonnull ayuda;
 @property (nonatomic) BOOL cerraralfinalizar;
@@ -3045,6 +3046,7 @@ SWIFT_CLASS("_TtC10DIGIPROSDK14FEEventosFlujo")
 @property (nonatomic, copy) NSString * _Nonnull NombreProceso;
 @property (nonatomic) NSInteger PIID;
 @property (nonatomic) NSInteger Total;
+@property (nonatomic, copy) NSString * _Nonnull UsuarioAsignar;
 @property (nonatomic) BOOL seleccionadoFlujo;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
