@@ -4750,6 +4750,7 @@ typedef SWIFT_ENUM(NSInteger, enumErrorType, closed) {
   enumErrorTypeSuccess = 1,
   enumErrorTypeWarning = 2,
   enumErrorTypeError = 3,
+  enumErrorTypeFormat = 4,
 };
 
 
