@@ -881,11 +881,25 @@ SWIFT_CLASS("_TtC10DIGIPROSDK15Atributos_firma")
 @end
 
 
+SWIFT_CLASS("_TtC10DIGIPROSDK21Atributos_firma_Anexo")
+@interface Atributos_firma_Anexo : EVObject
+@property (nonatomic, copy) NSString * _Nonnull localizacion;
+@property (nonatomic, copy) NSString * _Nonnull tiempo;
+@property (nonatomic, copy) NSString * _Nonnull personafirma;
+@property (nonatomic, copy) NSString * _Nonnull acuerdofirma;
+@property (nonatomic, copy) NSString * _Nonnull hashCrypt;
+@property (nonatomic, copy) NSString * _Nonnull timestamp;
+@property (nonatomic, copy) NSString * _Nonnull dispositivo;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC10DIGIPROSDK20Atributos_firma_hash")
 @interface Atributos_firma_hash : EVObject
 @property (nonatomic, copy) NSString * _Nonnull tiempo;
 @property (nonatomic, copy) NSString * _Nonnull imagebase64;
 @property (nonatomic, copy) NSString * _Nonnull videobase64;
+@property (nonatomic, copy) NSString * _Nonnull imagevideobase64;
 @property (nonatomic, copy) NSString * _Nonnull gps;
 @property (nonatomic, copy) NSString * _Nonnull personafirma;
 @property (nonatomic, copy) NSString * _Nonnull acuerdofirma;
@@ -902,9 +916,13 @@ SWIFT_CLASS("_TtC10DIGIPROSDK18Atributos_firmafad")
 @property (nonatomic, copy) NSString * _Nonnull ayuda;
 @property (nonatomic, copy) NSString * _Nonnull campo;
 @property (nonatomic, copy) NSString * _Nonnull decoraciontexto;
+@property (nonatomic, copy) NSString * _Nonnull dispositivo;
 @property (nonatomic, copy) NSString * _Nonnull elementopadre;
 @property (nonatomic, copy) NSString * _Nonnull estilotexto;
 @property (nonatomic, strong) Eventos * _Nonnull eventos;
+@property (nonatomic, copy) NSString * _Nonnull fecha;
+@property (nonatomic, copy) NSString * _Nonnull georeferencia;
+@property (nonatomic, copy) NSString * _Nonnull guidtimestamp;
 @property (nonatomic) BOOL habilitado;
 @property (nonatomic, copy) NSString * _Nonnull nombrearchivo;
 @property (nonatomic) BOOL ocultarsubtitulo;
@@ -925,6 +943,7 @@ SWIFT_CLASS("_TtC10DIGIPROSDK18Atributos_firmafad")
 @property (nonatomic, copy) NSString * _Nonnull colorreemplazar;
 @property (nonatomic) BOOL permisotipificar;
 @property (nonatomic) NSInteger intervalomaximo;
+@property (nonatomic, copy) NSString * _Nonnull tipovalidacion;
 @property (nonatomic, copy) NSString * _Nonnull anexo;
 @property (nonatomic) BOOL bindcondition;
 @property (nonatomic, copy) NSString * _Nonnull campocss;
@@ -2221,6 +2240,7 @@ SWIFT_CLASS("_TtC10DIGIPROSDK16Atributos_wizard")
 @property (nonatomic) BOOL visibleregresar;
 @property (nonatomic, copy) NSArray<NSString *> * _Nonnull navegacion;
 @property (nonatomic) BOOL visiblepaginado;
+@property (nonatomic) BOOL publicarautomatico;
 @property (nonatomic, copy) NSString * _Nonnull usuarioasignar;
 /// ///////////////////// ESTAN AQUÍ Y NO EN WEB //////////////////////////////////
 @property (nonatomic, copy) NSString * _Nonnull ayuda;
@@ -3117,6 +3137,7 @@ SWIFT_CLASS("_TtC10DIGIPROSDK13FEFormatoData")
 @property (nonatomic) BOOL isSelected;
 @property (nonatomic) NSInteger FechaFormatoLong;
 @property (nonatomic, copy) NSString * _Nonnull FechaFormato;
+@property (nonatomic) NSInteger TipoRemplazo;
 - (BOOL)skipPropertyValue:(id _Nonnull)value key:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -3534,6 +3555,7 @@ SWIFT_CLASS("_TtC10DIGIPROSDK9FEUsuario")
 @property (nonatomic, copy) NSString * _Nonnull TokenDispositivo;
 @property (nonatomic, copy) NSString * _Nonnull ProveedorPush;
 @property (nonatomic, copy) NSString * _Nonnull Mensajes;
+@property (nonatomic) BOOL AceptoTerminos;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -3792,16 +3814,16 @@ SWIFT_CLASS("_TtC10DIGIPROSDK14HeroTransition")
 
 @protocol UIViewControllerContextTransitioning;
 
+@interface HeroTransition (SWIFT_EXTENSION(DIGIPROSDK)) <UIViewControllerInteractiveTransitioning>
+@property (nonatomic, readonly) BOOL wantsInteractiveStart;
+- (void)startInteractiveTransition:(id <UIViewControllerContextTransitioning> _Nonnull)transitionContext;
+@end
+
+
 @interface HeroTransition (SWIFT_EXTENSION(DIGIPROSDK)) <UIViewControllerAnimatedTransitioning>
 - (void)animateTransition:(id <UIViewControllerContextTransitioning> _Nonnull)context;
 - (NSTimeInterval)transitionDuration:(id <UIViewControllerContextTransitioning> _Nullable)transitionContext SWIFT_WARN_UNUSED_RESULT;
 - (void)animationEnded:(BOOL)transitionCompleted;
-@end
-
-
-@interface HeroTransition (SWIFT_EXTENSION(DIGIPROSDK)) <UIViewControllerInteractiveTransitioning>
-@property (nonatomic, readonly) BOOL wantsInteractiveStart;
-- (void)startInteractiveTransition:(id <UIViewControllerContextTransitioning> _Nonnull)transitionContext;
 @end
 
 @class UINavigationController;
@@ -4740,6 +4762,11 @@ SWIFT_CLASS("_TtC10DIGIPROSDK10Validacion")
 @property (nonatomic, copy) NSString * _Nonnull catalogoDestino;
 @property (nonatomic, copy) NSString * _Nonnull hashFad;
 @property (nonatomic, copy) NSString * _Nonnull guidtimestamp;
+@property (nonatomic, copy) NSString * _Nonnull georeferencia;
+@property (nonatomic, copy) NSString * _Nonnull fecha;
+@property (nonatomic, copy) NSString * _Nonnull dispositivo;
+@property (nonatomic, copy) NSString * _Nonnull acuerdofirma;
+@property (nonatomic, copy) NSString * _Nonnull personafirma;
 - (BOOL)skipPropertyValue:(id _Nonnull)value key:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
