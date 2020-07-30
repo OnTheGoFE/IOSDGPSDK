@@ -3137,7 +3137,6 @@ SWIFT_CLASS("_TtC10DIGIPROSDK13FEFormatoData")
 @property (nonatomic) BOOL isSelected;
 @property (nonatomic) NSInteger FechaFormatoLong;
 @property (nonatomic, copy) NSString * _Nonnull FechaFormato;
-@property (nonatomic) NSInteger TipoRemplazo;
 - (BOOL)skipPropertyValue:(id _Nonnull)value key:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -4767,6 +4766,10 @@ SWIFT_CLASS("_TtC10DIGIPROSDK10Validacion")
 @property (nonatomic, copy) NSString * _Nonnull dispositivo;
 @property (nonatomic, copy) NSString * _Nonnull acuerdofirma;
 @property (nonatomic, copy) NSString * _Nonnull personafirma;
+@property (nonatomic, copy) NSString * _Nonnull cantidadhuellas;
+@property (nonatomic, copy) NSString * _Nonnull scorepromedio;
+@property (nonatomic, copy) NSString * _Nonnull scorehuellas;
+@property (nonatomic, copy) NSString * _Nonnull isreemplazohuella;
 - (BOOL)skipPropertyValue:(id _Nonnull)value key:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
