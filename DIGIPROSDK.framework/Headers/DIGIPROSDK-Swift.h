@@ -1419,6 +1419,7 @@ SWIFT_CLASS("_TtC10DIGIPROSDK16Atributos_moneda")
 @property (nonatomic, copy) NSString * _Nonnull campo;
 @property (nonatomic) BOOL contenidoestatico;
 @property (nonatomic, copy) NSString * _Nonnull cultura;
+@property (nonatomic) NSInteger decimales;
 @property (nonatomic, copy) NSString * _Nonnull decoraciontexto;
 @property (nonatomic, copy) NSString * _Nonnull elementopadre;
 @property (nonatomic, copy) NSString * _Nonnull estilotexto;
@@ -1432,6 +1433,7 @@ SWIFT_CLASS("_TtC10DIGIPROSDK16Atributos_moneda")
 @property (nonatomic, copy) NSString * _Nonnull pdfcampo;
 @property (nonatomic) BOOL requerido;
 @property (nonatomic, copy) NSString * _Nonnull subtitulo;
+@property (nonatomic) BOOL truncar;
 @property (nonatomic, copy) NSString * _Nonnull valor;
 @property (nonatomic, copy) NSString * _Nonnull valormetadato;
 @property (nonatomic) BOOL visible;
@@ -1463,6 +1465,7 @@ SWIFT_CLASS("_TtC10DIGIPROSDK16Atributos_moneda")
 
 SWIFT_CLASS("_TtC10DIGIPROSDK16Atributos_numero")
 @interface Atributos_numero : Atributos_Generales
+@property (nonatomic) BOOL truncar;
 @property (nonatomic, copy) NSString * _Nonnull alineadotexto;
 @property (nonatomic, copy) NSString * _Nonnull ayuda;
 @property (nonatomic, copy) NSString * _Nonnull campo;
@@ -3171,6 +3174,15 @@ SWIFT_CLASS("_TtC10DIGIPROSDK16FEGruposConvenio")
 @end
 
 
+SWIFT_CLASS("_TtC10DIGIPROSDK13FEIncidencias")
+@interface FEIncidencias : EVObject
+@property (nonatomic, copy) NSString * _Nonnull causa;
+@property (nonatomic, copy) NSString * _Nonnull motivo;
+@property (nonatomic, copy) NSString * _Nonnull descripcion;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC10DIGIPROSDK14FEItemCatalogo")
 @interface FEItemCatalogo : EVObject
 @property (nonatomic) NSInteger TipoCatalogoID;
@@ -3813,16 +3825,16 @@ SWIFT_CLASS("_TtC10DIGIPROSDK14HeroTransition")
 
 @protocol UIViewControllerContextTransitioning;
 
-@interface HeroTransition (SWIFT_EXTENSION(DIGIPROSDK)) <UIViewControllerInteractiveTransitioning>
-@property (nonatomic, readonly) BOOL wantsInteractiveStart;
-- (void)startInteractiveTransition:(id <UIViewControllerContextTransitioning> _Nonnull)transitionContext;
-@end
-
-
 @interface HeroTransition (SWIFT_EXTENSION(DIGIPROSDK)) <UIViewControllerAnimatedTransitioning>
 - (void)animateTransition:(id <UIViewControllerContextTransitioning> _Nonnull)context;
 - (NSTimeInterval)transitionDuration:(id <UIViewControllerContextTransitioning> _Nullable)transitionContext SWIFT_WARN_UNUSED_RESULT;
 - (void)animationEnded:(BOOL)transitionCompleted;
+@end
+
+
+@interface HeroTransition (SWIFT_EXTENSION(DIGIPROSDK)) <UIViewControllerInteractiveTransitioning>
+@property (nonatomic, readonly) BOOL wantsInteractiveStart;
+- (void)startInteractiveTransition:(id <UIViewControllerContextTransitioning> _Nonnull)transitionContext;
 @end
 
 @class UINavigationController;
