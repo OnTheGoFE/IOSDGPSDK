@@ -1419,7 +1419,6 @@ SWIFT_CLASS("_TtC10DIGIPROSDK16Atributos_moneda")
 @property (nonatomic, copy) NSString * _Nonnull campo;
 @property (nonatomic) BOOL contenidoestatico;
 @property (nonatomic, copy) NSString * _Nonnull cultura;
-@property (nonatomic) NSInteger decimales;
 @property (nonatomic, copy) NSString * _Nonnull decoraciontexto;
 @property (nonatomic, copy) NSString * _Nonnull elementopadre;
 @property (nonatomic, copy) NSString * _Nonnull estilotexto;
@@ -1433,7 +1432,6 @@ SWIFT_CLASS("_TtC10DIGIPROSDK16Atributos_moneda")
 @property (nonatomic, copy) NSString * _Nonnull pdfcampo;
 @property (nonatomic) BOOL requerido;
 @property (nonatomic, copy) NSString * _Nonnull subtitulo;
-@property (nonatomic) BOOL truncar;
 @property (nonatomic, copy) NSString * _Nonnull valor;
 @property (nonatomic, copy) NSString * _Nonnull valormetadato;
 @property (nonatomic) BOOL visible;
@@ -1465,7 +1463,6 @@ SWIFT_CLASS("_TtC10DIGIPROSDK16Atributos_moneda")
 
 SWIFT_CLASS("_TtC10DIGIPROSDK16Atributos_numero")
 @interface Atributos_numero : Atributos_Generales
-@property (nonatomic) BOOL truncar;
 @property (nonatomic, copy) NSString * _Nonnull alineadotexto;
 @property (nonatomic, copy) NSString * _Nonnull ayuda;
 @property (nonatomic, copy) NSString * _Nonnull campo;
@@ -2937,11 +2934,13 @@ SWIFT_CLASS("_TtC10DIGIPROSDK21FEConvenioCalculadora")
 @property (nonatomic, copy) NSString * _Nonnull convenioShortname;
 @property (nonatomic, copy) NSString * _Nonnull convenioNombre;
 @property (nonatomic, copy) NSString * _Nonnull convenioGoup;
+@property (nonatomic, copy) NSString * _Nonnull convenioBRMSCode;
 @property (nonatomic, copy) NSString * _Nonnull enterpriseName;
 @property (nonatomic, copy) NSArray<FEProductCalculadora *> * _Nonnull Productos;
 @property (nonatomic) NSInteger montoMaximo;
 @property (nonatomic) NSInteger montoMinimo;
 @property (nonatomic) BOOL aplicaOriginacionPaperless;
+@property (nonatomic, copy) NSString * _Nonnull branchName;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -4770,6 +4769,7 @@ SWIFT_CLASS("_TtC10DIGIPROSDK10Validacion")
 @property (nonatomic) BOOL validado;
 @property (nonatomic, copy) NSString * _Nonnull metadatos;
 @property (nonatomic, copy) NSString * _Nonnull tipodoc;
+@property (nonatomic, copy) NSArray<FEAnexoData *> * _Nullable feanexo;
 @property (nonatomic, copy) NSString * _Nonnull catalogoDestino;
 @property (nonatomic, copy) NSString * _Nonnull hashFad;
 @property (nonatomic, copy) NSString * _Nonnull guidtimestamp;
