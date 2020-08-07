@@ -2974,6 +2974,14 @@ SWIFT_CLASS("_TtC10DIGIPROSDK18FECotizacionesData")
 @end
 
 
+SWIFT_CLASS("_TtC10DIGIPROSDK10FEDiscount")
+@interface FEDiscount : EVObject
+@property (nonatomic, copy) NSString * _Nonnull Descuento;
+@property (nonatomic, copy) NSString * _Nonnull Tasa;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC10DIGIPROSDK24FEDistributorCalculadora")
 @interface FEDistributorCalculadora : EVObject
 @property (nonatomic, copy) NSString * _Nonnull distributorID;
@@ -3812,9 +3820,15 @@ SWIFT_CLASS("_TtC10DIGIPROSDK14HeroTransition")
 
 
 
+@protocol UIViewControllerContextTransitioning;
+
+@interface HeroTransition (SWIFT_EXTENSION(DIGIPROSDK)) <UIViewControllerInteractiveTransitioning>
+@property (nonatomic, readonly) BOOL wantsInteractiveStart;
+- (void)startInteractiveTransition:(id <UIViewControllerContextTransitioning> _Nonnull)transitionContext;
+@end
+
 @class UITabBarController;
 @protocol UIViewControllerAnimatedTransitioning;
-@protocol UIViewControllerInteractiveTransitioning;
 
 @interface HeroTransition (SWIFT_EXTENSION(DIGIPROSDK)) <UITabBarControllerDelegate>
 - (BOOL)tabBarController:(UITabBarController * _Nonnull)tabBarController shouldSelectViewController:(UIViewController * _Nonnull)viewController SWIFT_WARN_UNUSED_RESULT;
@@ -3822,18 +3836,11 @@ SWIFT_CLASS("_TtC10DIGIPROSDK14HeroTransition")
 - (id <UIViewControllerAnimatedTransitioning> _Nullable)tabBarController:(UITabBarController * _Nonnull)tabBarController animationControllerForTransitionFromViewController:(UIViewController * _Nonnull)fromVC toViewController:(UIViewController * _Nonnull)toVC SWIFT_WARN_UNUSED_RESULT;
 @end
 
-@protocol UIViewControllerContextTransitioning;
 
 @interface HeroTransition (SWIFT_EXTENSION(DIGIPROSDK)) <UIViewControllerAnimatedTransitioning>
 - (void)animateTransition:(id <UIViewControllerContextTransitioning> _Nonnull)context;
 - (NSTimeInterval)transitionDuration:(id <UIViewControllerContextTransitioning> _Nullable)transitionContext SWIFT_WARN_UNUSED_RESULT;
 - (void)animationEnded:(BOOL)transitionCompleted;
-@end
-
-
-@interface HeroTransition (SWIFT_EXTENSION(DIGIPROSDK)) <UIViewControllerInteractiveTransitioning>
-@property (nonatomic, readonly) BOOL wantsInteractiveStart;
-- (void)startInteractiveTransition:(id <UIViewControllerContextTransitioning> _Nonnull)transitionContext;
 @end
 
 @class UINavigationController;
