@@ -2976,8 +2976,9 @@ SWIFT_CLASS("_TtC10DIGIPROSDK18FECotizacionesData")
 
 SWIFT_CLASS("_TtC10DIGIPROSDK10FEDiscount")
 @interface FEDiscount : EVObject
-@property (nonatomic, copy) NSString * _Nonnull Descuento;
-@property (nonatomic, copy) NSString * _Nonnull Tasa;
+@property (nonatomic) double Descuento;
+@property (nonatomic) double Tasa;
+@property (nonatomic) double MontoTotal;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
