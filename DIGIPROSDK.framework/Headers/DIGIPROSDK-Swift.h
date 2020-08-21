@@ -3562,6 +3562,7 @@ SWIFT_CLASS("_TtC10DIGIPROSDK9FEUsuario")
 @property (nonatomic) BOOL PermisoNuevoFormato;
 @property (nonatomic) BOOL PermisoSalirConCambios;
 @property (nonatomic) BOOL PermisoVisualizarFormato;
+@property (nonatomic) NSInteger PerfilUsuarioID;
 @property (nonatomic, copy) NSString * _Nonnull PasswordEncoded;
 @property (nonatomic, copy) NSString * _Nonnull CurrentPasswordEncoded;
 @property (nonatomic, copy) NSString * _Nonnull PasswordNuevo;
