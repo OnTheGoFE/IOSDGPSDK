@@ -690,6 +690,8 @@ SWIFT_CLASS("_TtC10DIGIPROSDK23Atributos_comboDinamico")
 @property (nonatomic) BOOL requerido;
 @property (nonatomic, copy) NSString * _Nonnull subtitulo;
 @property (nonatomic, copy) NSString * _Nonnull textoconid;
+@property (nonatomic, copy) NSString * _Nonnull tipoasociacion;
+@property (nonatomic, copy) NSString * _Nonnull tipolista;
 @property (nonatomic, copy) NSString * _Nonnull valor;
 @property (nonatomic, copy) NSString * _Nonnull valordescripcion;
 @property (nonatomic, copy) NSString * _Nonnull valorid;
@@ -987,7 +989,7 @@ SWIFT_CLASS("_TtC10DIGIPROSDK23Atributos_georeferencia")
 @property (nonatomic) BOOL pedirmapa;
 @property (nonatomic) BOOL requerido;
 @property (nonatomic, copy) NSString * _Nonnull subtitulo;
-@property (nonatomic) NSInteger tipodoc;
+@property (nonatomic, copy) NSString * _Nullable tipodoc;
 @property (nonatomic, copy) NSString * _Nonnull valor;
 @property (nonatomic) BOOL valormetadato;
 @property (nonatomic) BOOL visible;
@@ -2613,6 +2615,7 @@ SWIFT_CLASS("_TtC10DIGIPROSDK8FEAcceso")
 @end
 
 @class FEEventosFlujo;
+@class FEListMetadatosHijos;
 
 SWIFT_CLASS("_TtC10DIGIPROSDK11FEAnexoData")
 @interface FEAnexoData : EVObject
@@ -2624,7 +2627,6 @@ SWIFT_CLASS("_TtC10DIGIPROSDK11FEAnexoData")
 @property (nonatomic) BOOL Movil;
 @property (nonatomic) NSInteger DocID;
 @property (nonatomic) NSInteger InstanciaId;
-@property (nonatomic) NSInteger ExpID;
 @property (nonatomic) NSInteger TipoDocID;
 @property (nonatomic, copy) NSString * _Nonnull Extension;
 @property (nonatomic) BOOL Separador;
@@ -2639,6 +2641,8 @@ SWIFT_CLASS("_TtC10DIGIPROSDK11FEAnexoData")
 @property (nonatomic) NSInteger Completado;
 @property (nonatomic) BOOL Publicado;
 @property (nonatomic, copy) NSString * _Nonnull NombreOriginal;
+@property (nonatomic) BOOL isReemplazo;
+@property (nonatomic, copy) NSArray<FEListMetadatosHijos *> * _Nonnull Metadatos;
 - (BOOL)skipPropertyValue:(id _Nonnull)value key:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -3006,7 +3010,6 @@ SWIFT_CLASS("_TtC10DIGIPROSDK21FEDocumentCalculadora")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class FEListMetadatosHijos;
 
 SWIFT_CLASS("_TtC10DIGIPROSDK11FEDocumento")
 @interface FEDocumento : EVObject
@@ -3017,7 +3020,6 @@ SWIFT_CLASS("_TtC10DIGIPROSDK11FEDocumento")
 @property (nonatomic, copy) NSString * _Nonnull Nombre;
 @property (nonatomic, copy) NSString * _Nonnull Ext;
 @property (nonatomic, copy) NSString * _Nonnull TipoDoc;
-@property (nonatomic) NSInteger TipoDocID;
 @property (nonatomic, copy) NSString * _Nonnull ImageString;
 @property (nonatomic, copy) NSArray<FEListMetadatosHijos *> * _Nonnull Metadatos;
 - (BOOL)skipPropertyValue:(id _Nonnull)value key:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
@@ -3455,6 +3457,7 @@ SWIFT_CLASS("_TtC10DIGIPROSDK20FEProductCalculadora")
 @property (nonatomic, copy) NSString * _Nonnull montoMinimo;
 @property (nonatomic, copy) NSString * _Nonnull montoMaximo;
 @property (nonatomic, copy) NSString * _Nonnull openingCommissionAmount;
+@property (nonatomic) double openingCommissionPercentage;
 @property (nonatomic, copy) NSString * _Nonnull productFrequency;
 @property (nonatomic, copy) NSString * _Nonnull productFrequencyCode;
 @property (nonatomic) NSInteger order;
@@ -3520,6 +3523,14 @@ SWIFT_CLASS("_TtC10DIGIPROSDK13FETipoReporte")
 @property (nonatomic) NSInteger TemplateID;
 @property (nonatomic, copy) NSArray<FECampoReporte *> * _Nonnull Campos;
 - (BOOL)skipPropertyValue:(id _Nonnull)value key:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC10DIGIPROSDK16FETokenSeguridad")
+@interface FETokenSeguridad : EVObject
+@property (nonatomic, copy) NSString * _Nonnull Token;
+@property (nonatomic) NSInteger Time;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -4645,13 +4656,13 @@ SWIFT_CLASS("_TtC10DIGIPROSDK15SpreadsheetView")
 
 
 @interface SpreadsheetView (SWIFT_EXTENSION(DIGIPROSDK))
-- (BOOL)isKindOfClass:(Class _Nonnull)aClass SWIFT_WARN_UNUSED_RESULT;
-- (id _Nullable)forwardingTargetForSelector:(SEL _Null_unspecified)aSelector SWIFT_WARN_UNUSED_RESULT;
+- (void)layoutSubviews;
 @end
 
 
 @interface SpreadsheetView (SWIFT_EXTENSION(DIGIPROSDK))
-- (void)layoutSubviews;
+- (BOOL)isKindOfClass:(Class _Nonnull)aClass SWIFT_WARN_UNUSED_RESULT;
+- (id _Nullable)forwardingTargetForSelector:(SEL _Null_unspecified)aSelector SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
