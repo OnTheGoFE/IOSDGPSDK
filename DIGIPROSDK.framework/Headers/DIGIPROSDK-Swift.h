@@ -1657,6 +1657,7 @@ SWIFT_CLASS("_TtC10DIGIPROSDK19Atributos_plantilla")
 @property (nonatomic, copy) NSDictionary<NSString *, id> * _Nonnull servicios;
 @property (nonatomic, copy) NSString * _Nonnull validationerror;
 @property (nonatomic) BOOL vertabspaginas;
+@property (nonatomic) BOOL verpieplantilla;
 @property (nonatomic) BOOL verexpres;
 @property (nonatomic) BOOL vertipodocres;
 @property (nonatomic, copy) NSString * _Nonnull colorfondoplantilla;
