@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'IOSDGPSDK'
-  s.version          = '1.27.4.700'
+  s.version          = '1.27.4.800'
   s.summary          = 'IOS SDK DIGIPRO Formatos Electrónicos (CORE)'
   s.description      = <<-DESC
 El Core framework es utilizado para la generación de formatos electrónicos.
