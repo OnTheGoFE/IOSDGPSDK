@@ -11,8 +11,6 @@ El Core framework es utilizado para la generación de formatos electrónicos.
   s.author           = { 'jviloriam' => 'jonathanv@digipro.com.mx' }
   s.source           = { :git => 'https://github.com/jviloriam/IOSDGPSDK.git', :tag => s.version.to_s }
   s.ios.deployment_target = '11.0'
-  s.swift_versions = '5.0'
-  s.public_header_files = "DIGIPROSDK.framework/Headers/*.h"
-  s.source_files = "DIGIPROSDK.framework/Headers/*.h"
-  s.vendored_frameworks = "DIGIPROSDK.framework"
+  s.swift_versions = '4.2'
+  s.vendored_frameworks = "DIGIPROSDK.xcframework"
 end
