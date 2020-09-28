@@ -4116,6 +4116,9 @@ extension SpreadsheetView {
 extension Blowfish {
   convenience public init(key: Swift.String, iv: Swift.String, padding: DIGIPROSDK.Padding = .pkcs7) throws
 }
+extension APIManager {
+  final public func decodeReturnSoap(_ getEncodeData: Swift.String) throws -> Swift.String
+}
 final public class AES {
   public enum Error : Swift.Error {
     case invalidKeySize
@@ -5679,6 +5682,7 @@ extension Data {
   public func gunzip() -> Foundation.Data?
   public func adler32() -> DIGIPROSDK.Adler32
   public func crc32() -> DIGIPROSDK.Crc32
+  public func aesEncrypt(keyData: Foundation.Data, ivData: Foundation.Data, operation: Swift.Int) -> Foundation.Data
 }
 public struct Crc32 : Swift.CustomStringConvertible {
   public init()
@@ -5830,6 +5834,8 @@ public class ConfigurationManager {
   public var fontApp: Swift.String
   public var tagElement: Swift.String
   public var extensionDoc: [DIGIPROSDK.FEDocumento]
+  public var keyaes: Swift.String
+  public var ivaes: Swift.String
   public var viewConsole: UIKit.UIView?
   public var textConsole: UIKit.UITextView?
   public var console: DIGIPROSDK.Console
