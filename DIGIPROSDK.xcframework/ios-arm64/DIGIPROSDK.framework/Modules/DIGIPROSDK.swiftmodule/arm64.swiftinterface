@@ -2671,7 +2671,6 @@ open class Interface : Swift.CustomStringConvertible, Swift.CustomDebugStringCon
   @objc public var CatDocId: Swift.Int
   @objc public var ProyectoId: Swift.Int
   @objc public var GrupoAdminID: Swift.Int
-  @objc override public func skipPropertyValue(_ value: Any, key: Swift.String) -> Swift.Bool
   @objc deinit
   @objc required dynamic public init()
 }
@@ -2689,7 +2688,6 @@ open class Interface : Swift.CustomStringConvertible, Swift.CustomDebugStringCon
   @objc public var Operador: Swift.String
   @objc public var Tabla: Swift.String
   @objc public var Valor: Swift.String
-  @objc override public func skipPropertyValue(_ value: Any, key: Swift.String) -> Swift.Bool
   @objc deinit
   @objc required dynamic public init()
 }
@@ -3237,7 +3235,9 @@ public protocol FormularioDelegate : AnyObject {
   func resolveValorQR(_ namePrellenado: Swift.String, _ idQRgenerado: Swift.String) -> Swift.Bool
   func obtainMathematics(_ element: Swift.String, _ isForced: Swift.Bool?)
   func valueElementRow(_ idElem: Swift.String) -> Swift.String
-  func valueMetaElementRow(_ idElem: Swift.String) -> Swift.String
+  func valueMetaElementRow(_ idElem: Swift.String, _ isCombo: Swift.String?) -> Swift.String
+  func updateDataComboDinamico(idsCombo: [Swift.String])
+  func isfilter(idElement: Swift.String) -> Swift.String
   func setDataAttributes(valor l: Swift.String, metadato m: Swift.String, habilitado h: Swift.Bool, visible v: Swift.Bool) -> Foundation.NSMutableDictionary
   func setTablaDataAttributes(valor l: Swift.String, metadato m: Swift.String, idunico i: Swift.String) -> Foundation.NSMutableDictionary
   func setComboboxTempAttributes(valor l: Swift.String, metadato m: Swift.String, idunico i: Swift.String, catalogoDestino cd: Swift.String) -> Foundation.NSMutableDictionary
@@ -3248,7 +3248,8 @@ public protocol FormularioDelegate : AnyObject {
   func checkLocationPermission()
   func openSettingApp(message: Swift.String)
   func getFormViewControllerDelegate() -> Eureka.FormViewController?
-  func getNavigationController() -> UIKit.UINavigationController?
+  func getNestedForm() -> Eureka.FormViewController?
+  func setNestedForm(_ nav: Eureka.FormViewController?)
   func getAllRowsFromCurrentForm() -> [Eureka.BaseRow]
   func reloadTableViewFormViewController()
   func detectAttrVisibility(_ row: Eureka.BaseRow) -> Swift.Bool
@@ -3257,6 +3258,7 @@ public protocol FormularioDelegate : AnyObject {
   func getTitlePageOrSection(_ rowString: Swift.String) -> Swift.String
   func getPlantillaTitle() -> Swift.String
   func getWizardFunctionalityFromTable(_ tag: Swift.String)
+  func getRowByIdInAllForms(_ id: Swift.String) -> (element: DIGIPROSDK.TipoElemento, row: Eureka.BaseRow?)
   func getElementByIdInAllForms(_ id: Swift.String) -> Eureka.BaseRow?
   func getSectionByIdInCurrentForm(_ id: Swift.String) -> Eureka.Section?
   func getElementByIdInCurrentForm(_ id: Swift.String) -> Eureka.BaseRow?
@@ -3337,6 +3339,7 @@ extension APIManager {
 }
 extension APIManager {
   final public func DGSDKLoginUser(user innerUser: Swift.String, pass innerPass: Swift.String, delegate innerDelegate: Delegate?) -> DIGIPROSDK.Promise<DIGIPROSDK.APISuccessResponse>
+  final public func DGSDKRestoreTokenSecurity(delegate: Delegate?) -> DIGIPROSDK.Promise<DIGIPROSDK.APISuccessResponse>
   final public func validUserOffline(delegate: Delegate?, user: Swift.String, pass: Swift.String) -> Swift.Bool
   final public func validConsultasOffline(delegate: Delegate?) -> Swift.Bool
   final public func salvarUsuario(delegate: Delegate?)
@@ -4118,6 +4121,7 @@ extension Blowfish {
 }
 extension APIManager {
   final public func decodeReturnSoap(_ getEncodeData: Swift.String) throws -> Swift.String
+  final public func restoreToken()
 }
 final public class AES {
   public enum Error : Swift.Error {
@@ -5386,8 +5390,8 @@ public enum BannerPosition {
 @objc @_inheritsConvenienceInitializers public class FETokenSeguridad : DIGIPROSDK.EVObject {
   @objc public var Token: Swift.String
   @objc public var Time: Swift.Int
-  @objc deinit
   @objc required dynamic public init()
+  @objc deinit
 }
 @objc @_inheritsConvenienceInitializers public class Atributos_firmafad : DIGIPROSDK.Atributos_Generales {
   @objc public var acuerdofirma: Swift.String
@@ -9092,6 +9096,7 @@ extension CircularScrollingConfigurationBuilder : Swift.CustomStringConvertible,
   @objc public var ProveedorPush: Swift.String
   @objc public var Mensajes: Swift.String
   @objc public var AceptoTerminos: Swift.Bool
+  @objc public var Token: DIGIPROSDK.FETokenSeguridad
   @objc required dynamic public init()
   @objc deinit
 }
@@ -9187,6 +9192,8 @@ extension CircularScrollingConfigurationBuilder : Swift.CustomStringConvertible,
   public func codigoRequest() throws -> Foundation.URLRequest
   public func skinRequest() throws -> Foundation.URLRequest
   public func usuarioRequest() throws -> Foundation.URLRequest
+  public func generateHashToken(soap: Swift.String) -> Swift.String
+  public func restoreTokenSecurityRequest() throws -> Foundation.URLRequest
   public func imageProfileRequest() throws -> Foundation.URLRequest
   public func userProfileRequest() throws -> Foundation.URLRequest
   public func registroRequest() throws -> Foundation.URLRequest

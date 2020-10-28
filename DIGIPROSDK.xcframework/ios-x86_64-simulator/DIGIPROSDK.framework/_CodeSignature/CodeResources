@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/DIGIPROSDK-Swift.h</key>
 		<data>
-		jibvjeV9Ll1BeRJp2JhyyCxXZfU=
+		spP6PQ5wis3LJ/WDA9d1NdoqSdw=
 		</data>
 		<key>Headers/DIGIPROSDK.h</key>
 		<data>
@@ -82,43 +82,43 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		TGlTjCZT/MrLUt6FeqoeCC5TojM=
+		9Qnwjrxzcl3fADb2HlW9v5P3nQo=
 		</data>
 		<key>LVggHCUtgyXTuIH.nib</key>
 		<data>
-		F078v3xi4X4YkvxkKb1i1UAsYEY=
+		JiPvRC2snh5RrrjwHpmU0553/TY=
 		</data>
 		<key>Modules/DIGIPROSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		Qo3le+LLPFwMBGYaJvR65Z4SigA=
+		ZmnESAf815D9RQuyCXVrP0ujdH4=
 		</data>
 		<key>Modules/DIGIPROSDK.swiftmodule/Project/x86_64.swiftsourceinfo</key>
 		<data>
-		Qo3le+LLPFwMBGYaJvR65Z4SigA=
+		ZmnESAf815D9RQuyCXVrP0ujdH4=
 		</data>
 		<key>Modules/DIGIPROSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		d5UI5k+gwSb4L2w5KM4DT6nAnfk=
+		XYZKYIG/UUSPTJdvdA3l0i2niOU=
 		</data>
 		<key>Modules/DIGIPROSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		9iDCps9MRpubqbqw1NhvL1RqRB4=
+		5mFGunEr3W5OZjrquPlED5Y5sxI=
 		</data>
 		<key>Modules/DIGIPROSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		88mLD35ORFOPba3R+uhsqic/mjY=
+		42ByRuDxcTwAL2X4Q+bVB7jBbsk=
 		</data>
 		<key>Modules/DIGIPROSDK.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		d5UI5k+gwSb4L2w5KM4DT6nAnfk=
+		XYZKYIG/UUSPTJdvdA3l0i2niOU=
 		</data>
 		<key>Modules/DIGIPROSDK.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		9iDCps9MRpubqbqw1NhvL1RqRB4=
+		5mFGunEr3W5OZjrquPlED5Y5sxI=
 		</data>
 		<key>Modules/DIGIPROSDK.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		88mLD35ORFOPba3R+uhsqic/mjY=
+		42ByRuDxcTwAL2X4Q+bVB7jBbsk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -190,7 +190,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7Piw2wmwXI3Fw/mtyLCIFrVwYBAmZrkglwHVOOGEZXU=
+			3ftYzw5Nc5ZGv8uWPFit3zp0QGcGjCucdEzJQXXNgg4=
 			</data>
 		</dict>
 		<key>Headers/DIGIPROSDK.h</key>
@@ -323,63 +323,63 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			MGYPCjOZcUaZFrk7rt0n9pdCLWzOcv2//HQLqpmvNsY=
+			7CiP98IagIal6PxeDjEzBEg0R8wUr2ld+LaFkLE3CjU=
 			</data>
 		</dict>
 		<key>Modules/DIGIPROSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ef2y6kAnYefLPWCNm5hfkJFHPi8WL2peNnmvLzj0dfA=
+			SVajWIwZdldy+3dSJjoXbgCpt6rAl8umdLHpma9o8bE=
 			</data>
 		</dict>
 		<key>Modules/DIGIPROSDK.swiftmodule/Project/x86_64.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ef2y6kAnYefLPWCNm5hfkJFHPi8WL2peNnmvLzj0dfA=
+			SVajWIwZdldy+3dSJjoXbgCpt6rAl8umdLHpma9o8bE=
 			</data>
 		</dict>
 		<key>Modules/DIGIPROSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SrMbbwbGdx0uTj3735OCr8KSpwymFJDDQQsDcksRfbQ=
+			/eelVBO0+xjX7oKtySNKOzd7Uq9UDt+77B9/Bgy158o=
 			</data>
 		</dict>
 		<key>Modules/DIGIPROSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			42z3/M4Lc5GauCQzgvJuaPmePQHisFHH/XDctePWdvM=
+			U3DJk66ghYY9EbepWG9WzBcoGhq2+fiQNrMGbAs7yqs=
 			</data>
 		</dict>
 		<key>Modules/DIGIPROSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			pXnRS0A2Ge7SqE1LEsp9kobts3jpl+qnEvYqZ3eOUXs=
+			aK+Z3IdC2NbOxHcf4icXr4A30pelu+F6eMt2v51y+JU=
 			</data>
 		</dict>
 		<key>Modules/DIGIPROSDK.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SrMbbwbGdx0uTj3735OCr8KSpwymFJDDQQsDcksRfbQ=
+			/eelVBO0+xjX7oKtySNKOzd7Uq9UDt+77B9/Bgy158o=
 			</data>
 		</dict>
 		<key>Modules/DIGIPROSDK.swiftmodule/x86_64.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			42z3/M4Lc5GauCQzgvJuaPmePQHisFHH/XDctePWdvM=
+			U3DJk66ghYY9EbepWG9WzBcoGhq2+fiQNrMGbAs7yqs=
 			</data>
 		</dict>
 		<key>Modules/DIGIPROSDK.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			pXnRS0A2Ge7SqE1LEsp9kobts3jpl+qnEvYqZ3eOUXs=
+			aK+Z3IdC2NbOxHcf4icXr4A30pelu+F6eMt2v51y+JU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

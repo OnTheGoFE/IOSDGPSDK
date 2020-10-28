@@ -2697,7 +2697,6 @@ SWIFT_CLASS("_TtC10DIGIPROSDK11FECatRemoto")
 @property (nonatomic) NSInteger CatDocId;
 @property (nonatomic) NSInteger ProyectoId;
 @property (nonatomic) NSInteger GrupoAdminID;
-- (BOOL)skipPropertyValue:(id _Nonnull)value key:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -2719,7 +2718,6 @@ SWIFT_CLASS("_TtC10DIGIPROSDK18FECatRemotoFiltros")
 @property (nonatomic, copy) NSString * _Nonnull Operador;
 @property (nonatomic, copy) NSString * _Nonnull Tabla;
 @property (nonatomic, copy) NSString * _Nonnull Valor;
-- (BOOL)skipPropertyValue:(id _Nonnull)value key:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -3545,6 +3543,7 @@ SWIFT_CLASS("_TtC10DIGIPROSDK9FEUsuario")
 @property (nonatomic, copy) NSString * _Nonnull ProveedorPush;
 @property (nonatomic, copy) NSString * _Nonnull Mensajes;
 @property (nonatomic) BOOL AceptoTerminos;
+@property (nonatomic, strong) FETokenSeguridad * _Nonnull Token;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
