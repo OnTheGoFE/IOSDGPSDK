@@ -3707,6 +3707,12 @@ SWIFT_CLASS("_TtC10DIGIPROSDK14HeroTransition")
 
 @protocol UIViewControllerContextTransitioning;
 
+@interface HeroTransition (SWIFT_EXTENSION(DIGIPROSDK)) <UIViewControllerInteractiveTransitioning>
+@property (nonatomic, readonly) BOOL wantsInteractiveStart;
+- (void)startInteractiveTransition:(id <UIViewControllerContextTransitioning> _Nonnull)transitionContext;
+@end
+
+
 @interface HeroTransition (SWIFT_EXTENSION(DIGIPROSDK)) <UIViewControllerAnimatedTransitioning>
 - (void)animateTransition:(id <UIViewControllerContextTransitioning> _Nonnull)context;
 - (NSTimeInterval)transitionDuration:(id <UIViewControllerContextTransitioning> _Nullable)transitionContext SWIFT_WARN_UNUSED_RESULT;
@@ -3714,18 +3720,11 @@ SWIFT_CLASS("_TtC10DIGIPROSDK14HeroTransition")
 @end
 
 @class UITabBarController;
-@protocol UIViewControllerInteractiveTransitioning;
 
 @interface HeroTransition (SWIFT_EXTENSION(DIGIPROSDK)) <UITabBarControllerDelegate>
 - (BOOL)tabBarController:(UITabBarController * _Nonnull)tabBarController shouldSelectViewController:(UIViewController * _Nonnull)viewController SWIFT_WARN_UNUSED_RESULT;
 - (id <UIViewControllerInteractiveTransitioning> _Nullable)tabBarController:(UITabBarController * _Nonnull)tabBarController interactionControllerForAnimationController:(id <UIViewControllerAnimatedTransitioning> _Nonnull)animationController SWIFT_WARN_UNUSED_RESULT;
 - (id <UIViewControllerAnimatedTransitioning> _Nullable)tabBarController:(UITabBarController * _Nonnull)tabBarController animationControllerForTransitionFromViewController:(UIViewController * _Nonnull)fromVC toViewController:(UIViewController * _Nonnull)toVC SWIFT_WARN_UNUSED_RESULT;
-@end
-
-
-@interface HeroTransition (SWIFT_EXTENSION(DIGIPROSDK)) <UIViewControllerInteractiveTransitioning>
-@property (nonatomic, readonly) BOOL wantsInteractiveStart;
-- (void)startInteractiveTransition:(id <UIViewControllerContextTransitioning> _Nonnull)transitionContext;
 @end
 
 @class UINavigationController;
@@ -4476,6 +4475,18 @@ SWIFT_CLASS("_TtC10DIGIPROSDK15SpreadsheetView")
 SWIFT_CLASS("_TtC10DIGIPROSDK27StatusBarNotificationBanner")
 @interface StatusBarNotificationBanner : BaseNotificationBanner
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class NSError;
+
+SWIFT_PROTOCOL("_TtP10DIGIPROSDK16TemplateDelegate_")
+@protocol TemplateDelegate
+- (void)didFormatViewFinishWithError:(NSError * _Nullable)error success:(NSDictionary<NSString *, id> * _Nullable)success;
+@optional
+- (void)onFinishFormat_CanceladoWithError:(NSError * _Nullable)error;
+- (void)onFinishFormat_BorradorWithGuid:(NSString * _Nonnull)guid error:(NSError * _Nullable)error success:(NSDictionary<NSString *, id> * _Nullable)success;
+- (void)onFinishFormat_PublicarWithGuid:(NSString * _Nonnull)guid error:(NSError * _Nullable)error success:(NSDictionary<NSString *, id> * _Nullable)success;
+- (void)onFinishFormat_WaitUIFromUserWithGuid:(NSString * _Nonnull)guid error:(NSError * _Nullable)error success:(NSDictionary<NSString *, id> * _Nullable)success;
 @end
 
 

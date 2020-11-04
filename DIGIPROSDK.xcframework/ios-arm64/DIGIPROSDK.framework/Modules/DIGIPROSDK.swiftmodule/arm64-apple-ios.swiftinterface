@@ -8,6 +8,7 @@ import CommonCrypto
 import Compression
 import CoreData
 import CoreImage
+import CoreTelephony
 @_exported import DIGIPROSDK
 import Darwin
 import Dispatch
@@ -3311,13 +3312,18 @@ public protocol FormularioDelegate : AnyObject {
   @objc func didSendResponseHUD(message: Swift.String, error: DIGIPROSDK.enumErrorType, porcentage: Swift.Int)
   @objc optional func didSendResponseStatus(title: Swift.String, subtitle: Swift.String, porcentage: Swift.Float)
 }
-@_inheritsConvenienceInitializers final public class APIManager<Delegate> : ObjectiveC.NSObject where Delegate : DIGIPROSDK.APIDelegate {
+@_inheritsConvenienceInitializers final public class APIManager<Delegate> : ObjectiveC.NSObject, Foundation.NSURLConnectionDelegate where Delegate : DIGIPROSDK.APIDelegate {
   weak final public var delegate: Delegate?
+  @objc final public func connection(_ connection: Foundation.NSURLConnection, didFailWithError error: Swift.Error)
   @objc deinit
   @objc override dynamic public init()
 }
-public protocol TemplateDelegate : AnyObject {
-  func didFormatViewFinish(error: Foundation.NSError?, success: [Swift.String : Any]?)
+@objc public protocol TemplateDelegate : AnyObject {
+  @objc func didFormatViewFinish(error: Foundation.NSError?, success: [Swift.String : Any]?)
+  @objc optional func onFinishFormat_Cancelado(error: Foundation.NSError?)
+  @objc optional func onFinishFormat_Borrador(guid: Swift.String, error: Foundation.NSError?, success: [Swift.String : Any]?)
+  @objc optional func onFinishFormat_Publicar(guid: Swift.String, error: Foundation.NSError?, success: [Swift.String : Any]?)
+  @objc optional func onFinishFormat_WaitUIFromUser(guid: Swift.String, error: Foundation.NSError?, success: [Swift.String : Any]?)
 }
 @_inheritsConvenienceInitializers final public class TemplateManager<Delegate> : ObjectiveC.NSObject where Delegate : DIGIPROSDK.TemplateDelegate {
   weak final public var delegate: Delegate?
@@ -3325,6 +3331,16 @@ public protocol TemplateDelegate : AnyObject {
   @objc override dynamic public init()
 }
 extension APIManager {
+  public enum requestMode {
+    case sync
+    case async
+    public static func == (a: DIGIPROSDK.APIManager<Delegate>.requestMode, b: DIGIPROSDK.APIManager<Delegate>.requestMode) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+    public func hash(into hasher: inout Swift.Hasher)
+  }
+  final public func setTimerLogForRequest(mode: DIGIPROSDK.APIManager<Delegate>.requestMode, request: Foundation.URLRequest, launcher: Swift.String, debug: Swift.Bool = false) -> DIGIPROSDK.Promise<Foundation.Data>
   final public func DGSDKDebugUserRequest() -> DIGIPROSDK.Promise<DIGIPROSDK.FEConsultaAcceso>
   final public func DGSDKLicenceWith(appkey innerKey: Swift.String, secretid innersecret: Swift.String, completionHandler: (Swift.Bool, Swift.Error) -> Swift.Void)
   final public func DGSDKLogin(code innerCode: Swift.String, user innerUser: Swift.String, pass innerPass: Swift.String, delegate innerDelegate: Delegate?) -> DIGIPROSDK.Promise<DIGIPROSDK.APISuccessResponse>
@@ -5805,6 +5821,8 @@ public struct Fnts {
 }
 public class ConfigurationManager {
   public static let shared: DIGIPROSDK.ConfigurationManager
+  final public let request: DIGIPROSDK.Requests
+  public var timeInterval: Swift.Double
   public var launchOptions: [UIKit.UIApplication.LaunchOptionsKey : Any]?
   public var isCodePresented: Swift.Bool
   public var isInitiated: Swift.Bool
@@ -9352,6 +9370,8 @@ extension DIGIPROSDK.CBC.Error : Swift.Equatable {}
 extension DIGIPROSDK.CBC.Error : Swift.Hashable {}
 extension DIGIPROSDK.CipherError : Swift.Equatable {}
 extension DIGIPROSDK.CipherError : Swift.Hashable {}
+extension DIGIPROSDK.APIManager.requestMode : Swift.Equatable {}
+extension DIGIPROSDK.APIManager.requestMode : Swift.Hashable {}
 extension DIGIPROSDK.HeroTransitionState : Swift.Equatable {}
 extension DIGIPROSDK.HeroTransitionState : Swift.Hashable {}
 extension DIGIPROSDK.HeroTransitionState : Swift.RawRepresentable {}
