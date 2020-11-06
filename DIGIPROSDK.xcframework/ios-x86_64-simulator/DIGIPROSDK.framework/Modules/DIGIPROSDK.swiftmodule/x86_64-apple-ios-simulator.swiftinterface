@@ -3236,8 +3236,8 @@ public protocol FormularioDelegate : AnyObject {
   func resolveValorQR(_ namePrellenado: Swift.String, _ idQRgenerado: Swift.String) -> Swift.Bool
   func obtainMathematics(_ element: Swift.String, _ isForced: Swift.Bool?)
   func valueElementRow(_ idElem: Swift.String) -> Swift.String
-  func valueMetaElementRow(_ idElem: Swift.String, _ isCombo: Swift.String?) -> Swift.String
-  func updateDataComboDinamico(idsCombo: [Swift.String])
+  func valueMetaElementRow(_ idElem: Swift.String, _ isCombo: Swift.String?) -> (value: Swift.String, row: Eureka.BaseRow)
+  func updateDataComboDinamico(idsCombo: [(id: Swift.String, row: Eureka.BaseRow)])
   func isfilter(idElement: Swift.String) -> Swift.String
   func setDataAttributes(valor l: Swift.String, metadato m: Swift.String, habilitado h: Swift.Bool, visible v: Swift.Bool) -> Foundation.NSMutableDictionary
   func setTablaDataAttributes(valor l: Swift.String, metadato m: Swift.String, idunico i: Swift.String) -> Foundation.NSMutableDictionary
@@ -5823,6 +5823,7 @@ public class ConfigurationManager {
   public static let shared: DIGIPROSDK.ConfigurationManager
   final public let request: DIGIPROSDK.Requests
   public var timeInterval: Swift.Double
+  public var debugNetwork: Swift.Bool
   public var launchOptions: [UIKit.UIApplication.LaunchOptionsKey : Any]?
   public var isCodePresented: Swift.Bool
   public var isInitiated: Swift.Bool
