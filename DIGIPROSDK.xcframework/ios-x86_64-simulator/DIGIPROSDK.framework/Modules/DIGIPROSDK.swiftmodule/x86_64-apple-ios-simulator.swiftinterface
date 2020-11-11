@@ -370,6 +370,11 @@ extension UIView {
     get
   }
 }
+@objc @_inheritsConvenienceInitializers public class Atributos_VeridasVideoSelfie : DIGIPROSDK.Atributos_Generales {
+  @objc public var visible: Swift.Bool
+  @objc deinit
+  @objc required dynamic public init()
+}
 extension SpreadsheetView {
   @objc override dynamic public func resizableSnapshotView(from rect: CoreGraphics.CGRect, afterScreenUpdates afterUpdates: Swift.Bool, withCapInsets capInsets: UIKit.UIEdgeInsets) -> UIKit.UIView?
 }
@@ -548,6 +553,7 @@ extension CATransform3D : Swift.Equatable {
 @objc @_inheritsConvenienceInitializers public class FEJsonCalculadora : DIGIPROSDK.EVObject {
   @objc public var bpID: Swift.Int
   @objc public var promotorName: Swift.String
+  @objc public var biometricsExceptionProtocol: Swift.String
   @objc public var branch: [DIGIPROSDK.FEBranchCalculadora]
   @objc public var GruposConvenio: [DIGIPROSDK.FEGruposConvenio]
   @objc deinit
@@ -1162,6 +1168,11 @@ extension Promise where Result : Swift.Sequence {
 }
 @available(iOS 9.0, *)
 public typealias ConstraintLayoutGuide = UIKit.UILayoutGuide
+@objc @_inheritsConvenienceInitializers public class Atributos_VeridasPhotoSelfie : DIGIPROSDK.Atributos_Generales {
+  @objc public var visible: Swift.Bool
+  @objc required dynamic public init()
+  @objc deinit
+}
 extension HMAC {
   convenience public init(key: Swift.String, variant: DIGIPROSDK.HMAC.Variant = .md5) throws
 }
@@ -1574,6 +1585,33 @@ extension UILayoutPriority : DIGIPROSDK.ConstraintPriorityTarget {
     get
   }
 }
+@objc @_inheritsConvenienceInitializers public class FEOcrVeridas : DIGIPROSDK.EVObject {
+  @objc public var PD_AddressMunicipality_Out: Swift.String
+  @objc public var OD_CURP_Out: Swift.String
+  @objc public var PD_IdentificationNumber_Out: Swift.String
+  @objc public var PD_AddressDistrict_Out: Swift.String
+  @objc public var PD_Name_Out: Swift.String
+  @objc public var PD_LastName2_Out: Swift.String
+  @objc public var DD_ExpeditionDate_Out: Swift.String
+  @objc public var PD_Sex_Out: Swift.String
+  @objc public var OD_IDCredentialCode_Out: Swift.String
+  @objc public var PD_AddressStreet_Out: Swift.String
+  @objc public var OD_EmissionNumber_Out: Swift.String
+  @objc public var PD_LastName1_Out: Swift.String
+  @objc public var PD_BirthPlaceState_Out: Swift.String
+  @objc public var DD_ExpirationDate_Out: Swift.String
+  @objc public var PD_AddressState_Out: Swift.String
+  @objc public var PD_BirthDate_Out: Swift.String
+  @objc public var OD_Section_Out: Swift.String
+  @objc public var OD_OCRNumber_Out: Swift.String
+  @objc public var OD_RegistrationDate_Out: Swift.String
+  @objc public var PD_LastName_Out: Swift.String
+  @objc public var OD_FUAR_Out: Swift.String
+  @objc public var cropObverse: Swift.String
+  @objc public var cropReverse: Swift.String
+  @objc deinit
+  @objc required dynamic public init()
+}
 @objc @_inheritsConvenienceInitializers public class Atributos_wizard : DIGIPROSDK.Atributos_Generales {
   @objc public var alineadotexto: Swift.String
   @objc public var ancho: Swift.String
@@ -1837,6 +1875,11 @@ extension Cryptors {
   public static func decrypt(_ cipherText: Swift.Array<Swift.UInt8>, key: Swift.Array<Swift.UInt8>, iv: Swift.Array<Swift.UInt8>, authenticationHeader: Swift.Array<Swift.UInt8>, authenticationTag: Swift.Array<Swift.UInt8>) throws -> (plainText: Swift.Array<Swift.UInt8>, success: Swift.Bool)
   @objc deinit
 }
+@objc @_inheritsConvenienceInitializers public class Atributos_VeridasDocumentCapture : DIGIPROSDK.Atributos_Generales {
+  @objc public var visible: Swift.Bool
+  @objc required dynamic public init()
+  @objc deinit
+}
 public protocol EVGenericsKVC {
   func setGenericValue(_ value: Swift.AnyObject!, forUndefinedKey key: Swift.String)
   func getGenericType() -> ObjectiveC.NSObject
@@ -2026,6 +2069,11 @@ extension IndexPath {
     get
   }
   public init(row: Swift.Int, column: Swift.Int)
+}
+@objc @_inheritsConvenienceInitializers public class Atributos_microblinkocr : DIGIPROSDK.Atributos_Generales {
+  @objc public var visible: Swift.Bool
+  @objc required dynamic public init()
+  @objc deinit
 }
 final public class Promise<Result> {
   final public var isPending: Swift.Bool {
@@ -3237,6 +3285,7 @@ public protocol FormularioDelegate : AnyObject {
   func obtainMathematics(_ element: Swift.String, _ isForced: Swift.Bool?)
   func valueElementRow(_ idElem: Swift.String) -> Swift.String
   func valueMetaElementRow(_ idElem: Swift.String, _ isCombo: Swift.String?) -> (value: Swift.String, row: Eureka.BaseRow)
+  func reloadContentCombos(_ index: Swift.Int)
   func updateDataComboDinamico(idsCombo: [(id: Swift.String, row: Eureka.BaseRow)])
   func isfilter(idElement: Swift.String) -> Swift.String
   func setDataAttributes(valor l: Swift.String, metadato m: Swift.String, habilitado h: Swift.Bool, visible v: Swift.Bool) -> Foundation.NSMutableDictionary
@@ -3355,6 +3404,8 @@ extension APIManager {
 }
 extension APIManager {
   final public func DGSDKLoginUser(user innerUser: Swift.String, pass innerPass: Swift.String, delegate innerDelegate: Delegate?) -> DIGIPROSDK.Promise<DIGIPROSDK.APISuccessResponse>
+  final public func getReturnObject(aexmlD: DIGIPROSDK.AEXMLDocument, r: Swift.String = "") -> Swift.String
+  final public func DGSDKRestoreTokenSecurityV2(delegate: Delegate?) -> Swift.Bool
   final public func DGSDKRestoreTokenSecurity(delegate: Delegate?) -> DIGIPROSDK.Promise<DIGIPROSDK.APISuccessResponse>
   final public func validUserOffline(delegate: Delegate?, user: Swift.String, pass: Swift.String) -> Swift.Bool
   final public func validConsultasOffline(delegate: Delegate?) -> Swift.Bool
@@ -3386,7 +3437,7 @@ extension APIManager {
 }
 extension APIManager {
   final public func DGSDKdownloadVariables(delegate: Delegate?) -> DIGIPROSDK.Promise<DIGIPROSDK.APISuccessResponse>
-  final public func DGSDKdownloadCatRemoto(delegate: Delegate?) -> DIGIPROSDK.FECatRemotoData?
+  final public func DGSDKdownloadCatRemoto(delegate: Delegate?, catRemoto: DIGIPROSDK.FECatRemoto) -> DIGIPROSDK.FECatRemotoData?
   final public func validVariablesOffline() -> Swift.Bool
   final public func salvarVariable(delegate: Delegate?, data: Swift.String)
 }
@@ -3486,6 +3537,12 @@ extension APIManager {
 extension APIManager {
   final public func serviceCheckTrips(delegate: Delegate?, jsonService jsonservice: Foundation.NSString) -> DIGIPROSDK.Promise<[DIGIPROSDK.FEFormatoData]>
   final public func serviceAcceptTrips(delegate: Delegate?, jsonService jsonservice: Foundation.NSString) -> DIGIPROSDK.Promise<DIGIPROSDK.APISuccessResponse>
+}
+extension APIManager {
+  final public func getIdVeridasDocument(delegate: Delegate?, jsonService jsonservice: Foundation.NSString) -> DIGIPROSDK.Promise<Swift.String>
+  final public func uploadObverseVeridas(delegate: Delegate?, jsonService jsonservice: Foundation.NSString) -> DIGIPROSDK.Promise<Swift.String>
+  final public func uploadReverseVeridas(delegate: Delegate?, jsonService jsonservice: Foundation.NSString) -> DIGIPROSDK.Promise<Swift.String>
+  final public func generateOCRAndGetCropImageFromDocumentVeridas(delegate: Delegate?, jsonService jsonservice: Foundation.NSString) -> DIGIPROSDK.Promise<DIGIPROSDK.FEOcrVeridas>
 }
 public func race<A>(on queue: Dispatch.DispatchQueue = .main, _ promises: DIGIPROSDK.Promise<A>...) -> DIGIPROSDK.Promise<A>
 public func race<A, S>(on queue: Dispatch.DispatchQueue = .main, _ promises: S) -> DIGIPROSDK.Promise<A> where S : Swift.Sequence, S.Element == DIGIPROSDK.Promise<A>
@@ -5217,6 +5274,10 @@ public enum TipoElemento : Swift.String {
   case huelladigital
   case rostrovivo
   case capturafacial
+  case veridasdocumentcapture
+  case veridasphotoselfie
+  case veridasvideoselfie
+  case microblinkocr
   case other
   public typealias RawValue = Swift.String
   public init?(rawValue: Swift.String)
@@ -5424,6 +5485,7 @@ public enum BannerPosition {
   @objc public var georeferencia: Swift.String
   @objc public var guidtimestamp: Swift.String
   @objc public var habilitado: Swift.Bool
+  @objc public var mostraranimacion: Swift.Bool
   @objc public var nombrearchivo: Swift.String
   @objc public var ocultarsubtitulo: Swift.Bool
   @objc public var pdfcampoanexo: Swift.String
@@ -5552,6 +5614,7 @@ public func `try`<A>(on queue: Dispatch.DispatchQueue = .main, _ handler: @escap
   @objc public var isRule: Swift.Bool
   @objc public var margenderecho: Swift.String
   @objc public var margenizquierdo: Swift.String
+  @objc public var mostraranimacion: Swift.Bool
   @objc public var ocultarsubtitulo: Swift.Bool
   @objc public var opcionrequerida: Swift.String
   @objc public var orientacion: Swift.String

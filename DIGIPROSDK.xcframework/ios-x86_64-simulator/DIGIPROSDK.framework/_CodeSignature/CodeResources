@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/DIGIPROSDK-Swift.h</key>
 		<data>
-		Tva2im99aL1hGN2LIl9YNV63V44=
+		Jd2xsSmUmP2AgKDZxljCxB+KMlc=
 		</data>
 		<key>Headers/DIGIPROSDK.h</key>
 		<data>
@@ -82,43 +82,43 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		hrKUCN8xBhVr4oZQoT9mJ8esvIo=
+		LWTQPy17kQf2Z/1DZvWfjzaiKis=
 		</data>
 		<key>LVggHCUtgyXTuIH.nib</key>
 		<data>
-		qFz59UyYhl4e6kGEiUDwe1zdk2A=
+		bAPUqA2MuhQb9bWHyPNurP4456M=
 		</data>
 		<key>Modules/DIGIPROSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		hfwWbyy8dcAvTBpyPxeqBIOPn48=
+		ao7M2qXgNKrad4iz1PohyHWiUA4=
 		</data>
 		<key>Modules/DIGIPROSDK.swiftmodule/Project/x86_64.swiftsourceinfo</key>
 		<data>
-		hfwWbyy8dcAvTBpyPxeqBIOPn48=
+		ao7M2qXgNKrad4iz1PohyHWiUA4=
 		</data>
 		<key>Modules/DIGIPROSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		8ZycTU5VovkyWS06cO3sE3L+HCo=
+		cG4H68FxqIRozNOiEwKfUmMpo5s=
 		</data>
 		<key>Modules/DIGIPROSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		zW/2Kz+cus7dgrGgB0WJsAQqJlY=
+		cHpMN10hD+dVnOy99F1WkwkTDgc=
 		</data>
 		<key>Modules/DIGIPROSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		MjZ7gVUY0rrhjUtFCjKwFSKxz7k=
+		/zsa5WyYKxyBfM+5twaIMGj40Kk=
 		</data>
 		<key>Modules/DIGIPROSDK.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		8ZycTU5VovkyWS06cO3sE3L+HCo=
+		cG4H68FxqIRozNOiEwKfUmMpo5s=
 		</data>
 		<key>Modules/DIGIPROSDK.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		zW/2Kz+cus7dgrGgB0WJsAQqJlY=
+		cHpMN10hD+dVnOy99F1WkwkTDgc=
 		</data>
 		<key>Modules/DIGIPROSDK.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		MjZ7gVUY0rrhjUtFCjKwFSKxz7k=
+		/zsa5WyYKxyBfM+5twaIMGj40Kk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -181,7 +181,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			22hOrkiEsNyI1KGxxkCZoMAu9redwsz9kxn9m6tNoXE=
+			E3ahfXA5c4gunqAA4ockaHgFFnL6b9PraIKSBn/SQw4=
 			</data>
 		</dict>
 		<key>Headers/DIGIPROSDK.h</key>
@@ -314,63 +314,63 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			It3+eHpOXcsORlKtpcbQS1vz1SdN9DcIqUl6vVPybY0=
+			6woVwy2L14kh6y69Lc/7xmyhiNzt9d0BMxoWranBExI=
 			</data>
 		</dict>
 		<key>Modules/DIGIPROSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WvEU9kQjfkuu2MVILo0hNkzdn3ftP1BcAVxnv1yJThM=
+			SY+962p4Y8b4YO1ut69jdupGp35nfEDfZilhqMKzKmU=
 			</data>
 		</dict>
 		<key>Modules/DIGIPROSDK.swiftmodule/Project/x86_64.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WvEU9kQjfkuu2MVILo0hNkzdn3ftP1BcAVxnv1yJThM=
+			SY+962p4Y8b4YO1ut69jdupGp35nfEDfZilhqMKzKmU=
 			</data>
 		</dict>
 		<key>Modules/DIGIPROSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			46M35HyeLzTTi9JOPoSGcw3FiGueQ2VDQ36bByx3cJw=
+			OJlrMr+D7Men+EE9RNP/j9fwpt4My71LdaRw63G5Vl8=
 			</data>
 		</dict>
 		<key>Modules/DIGIPROSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			REgW8kQ/YJbLwH2V9Wru+jexl2t6Y9ODxMM+lUNulzg=
+			FIH073RwB6jIV2F+tl+ekdX3fKFSm/JQxTvDLDbGPCY=
 			</data>
 		</dict>
 		<key>Modules/DIGIPROSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VyaUlbnjW16gZIZV1rWISKD3nEInUsumeWRsT1F8Ju0=
+			QQU0CWVkTtUFTTn46HNNuwkKmXlzxc2JVKhcNYQjoG8=
 			</data>
 		</dict>
 		<key>Modules/DIGIPROSDK.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			46M35HyeLzTTi9JOPoSGcw3FiGueQ2VDQ36bByx3cJw=
+			OJlrMr+D7Men+EE9RNP/j9fwpt4My71LdaRw63G5Vl8=
 			</data>
 		</dict>
 		<key>Modules/DIGIPROSDK.swiftmodule/x86_64.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			REgW8kQ/YJbLwH2V9Wru+jexl2t6Y9ODxMM+lUNulzg=
+			FIH073RwB6jIV2F+tl+ekdX3fKFSm/JQxTvDLDbGPCY=
 			</data>
 		</dict>
 		<key>Modules/DIGIPROSDK.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VyaUlbnjW16gZIZV1rWISKD3nEInUsumeWRsT1F8Ju0=
+			QQU0CWVkTtUFTTn46HNNuwkKmXlzxc2JVKhcNYQjoG8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

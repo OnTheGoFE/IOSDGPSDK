@@ -458,6 +458,27 @@ SWIFT_CLASS("_TtC10DIGIPROSDK16Atributos_Slider")
 @end
 
 
+SWIFT_CLASS("_TtC10DIGIPROSDK32Atributos_VeridasDocumentCapture")
+@interface Atributos_VeridasDocumentCapture : Atributos_Generales
+@property (nonatomic) BOOL visible;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC10DIGIPROSDK28Atributos_VeridasPhotoSelfie")
+@interface Atributos_VeridasPhotoSelfie : Atributos_Generales
+@property (nonatomic) BOOL visible;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC10DIGIPROSDK28Atributos_VeridasVideoSelfie")
+@interface Atributos_VeridasVideoSelfie : Atributos_Generales
+@property (nonatomic) BOOL visible;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC10DIGIPROSDK15Atributos_audio")
 @interface Atributos_audio : Atributos_Generales
 @property (nonatomic, copy) NSString * _Nonnull alineadotexto;
@@ -927,6 +948,7 @@ SWIFT_CLASS("_TtC10DIGIPROSDK18Atributos_firmafad")
 @property (nonatomic, copy) NSString * _Nonnull georeferencia;
 @property (nonatomic, copy) NSString * _Nonnull guidtimestamp;
 @property (nonatomic) BOOL habilitado;
+@property (nonatomic) BOOL mostraranimacion;
 @property (nonatomic, copy) NSString * _Nonnull nombrearchivo;
 @property (nonatomic) BOOL ocultarsubtitulo;
 @property (nonatomic, copy) NSString * _Nonnull pdfcampoanexo;
@@ -1382,6 +1404,7 @@ SWIFT_CLASS("_TtC10DIGIPROSDK27Atributos_marcadodocumentos")
 @property (nonatomic) BOOL isRule;
 @property (nonatomic, copy) NSString * _Nonnull margenderecho;
 @property (nonatomic, copy) NSString * _Nonnull margenizquierdo;
+@property (nonatomic) BOOL mostraranimacion;
 @property (nonatomic) BOOL ocultarsubtitulo;
 @property (nonatomic, copy) NSString * _Nonnull opcionrequerida;
 @property (nonatomic, copy) NSString * _Nonnull orientacion;
@@ -1411,6 +1434,13 @@ SWIFT_CLASS("_TtC10DIGIPROSDK16Atributos_metodo")
 @property (nonatomic) BOOL ocultarsubtitulo;
 @property (nonatomic, copy) NSString * _Nonnull subtitulo;
 - (BOOL)skipPropertyValue:(id _Nonnull)value key:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC10DIGIPROSDK23Atributos_microblinkocr")
+@interface Atributos_microblinkocr : Atributos_Generales
+@property (nonatomic) BOOL visible;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -3177,6 +3207,7 @@ SWIFT_CLASS("_TtC10DIGIPROSDK17FEJsonCalculadora")
 @interface FEJsonCalculadora : EVObject
 @property (nonatomic) NSInteger bpID;
 @property (nonatomic, copy) NSString * _Nonnull promotorName;
+@property (nonatomic, copy) NSString * _Nonnull biometricsExceptionProtocol;
 @property (nonatomic, copy) NSArray<FEBranchCalculadora *> * _Nonnull branch;
 @property (nonatomic, copy) NSArray<FEGruposConvenio *> * _Nonnull GruposConvenio;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -3320,6 +3351,35 @@ SWIFT_CLASS("_TtC10DIGIPROSDK14FEMensajesPush")
 @property (nonatomic) BOOL Visto;
 @property (nonatomic) BOOL Borrado;
 - (BOOL)skipPropertyValue:(id _Nonnull)value key:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC10DIGIPROSDK12FEOcrVeridas")
+@interface FEOcrVeridas : EVObject
+@property (nonatomic, copy) NSString * _Nonnull PD_AddressMunicipality_Out;
+@property (nonatomic, copy) NSString * _Nonnull OD_CURP_Out;
+@property (nonatomic, copy) NSString * _Nonnull PD_IdentificationNumber_Out;
+@property (nonatomic, copy) NSString * _Nonnull PD_AddressDistrict_Out;
+@property (nonatomic, copy) NSString * _Nonnull PD_Name_Out;
+@property (nonatomic, copy) NSString * _Nonnull PD_LastName2_Out;
+@property (nonatomic, copy) NSString * _Nonnull DD_ExpeditionDate_Out;
+@property (nonatomic, copy) NSString * _Nonnull PD_Sex_Out;
+@property (nonatomic, copy) NSString * _Nonnull OD_IDCredentialCode_Out;
+@property (nonatomic, copy) NSString * _Nonnull PD_AddressStreet_Out;
+@property (nonatomic, copy) NSString * _Nonnull OD_EmissionNumber_Out;
+@property (nonatomic, copy) NSString * _Nonnull PD_LastName1_Out;
+@property (nonatomic, copy) NSString * _Nonnull PD_BirthPlaceState_Out;
+@property (nonatomic, copy) NSString * _Nonnull DD_ExpirationDate_Out;
+@property (nonatomic, copy) NSString * _Nonnull PD_AddressState_Out;
+@property (nonatomic, copy) NSString * _Nonnull PD_BirthDate_Out;
+@property (nonatomic, copy) NSString * _Nonnull OD_Section_Out;
+@property (nonatomic, copy) NSString * _Nonnull OD_OCRNumber_Out;
+@property (nonatomic, copy) NSString * _Nonnull OD_RegistrationDate_Out;
+@property (nonatomic, copy) NSString * _Nonnull PD_LastName_Out;
+@property (nonatomic, copy) NSString * _Nonnull OD_FUAR_Out;
+@property (nonatomic, copy) NSString * _Nonnull cropObverse;
+@property (nonatomic, copy) NSString * _Nonnull cropReverse;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
