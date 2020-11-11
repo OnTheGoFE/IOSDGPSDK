@@ -86,7 +86,7 @@
 		</data>
 		<key>LVggHCUtgyXTuIH.nib</key>
 		<data>
-		0dt48VzIWW4etbPli9SuIWGPrGk=
+		RQq+4O6UXW+gMZIv70CBOavvzLk=
 		</data>
 		<key>Modules/DIGIPROSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
@@ -106,7 +106,7 @@
 		</data>
 		<key>Modules/DIGIPROSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		5WiBIrWloMUJGgNgl695Y6NC9Y4=
+		+Ihdr0S/hHkMXKD9AKyF4e0U/Y8=
 		</data>
 		<key>Modules/DIGIPROSDK.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -118,7 +118,7 @@
 		</data>
 		<key>Modules/DIGIPROSDK.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		5WiBIrWloMUJGgNgl695Y6NC9Y4=
+		+Ihdr0S/hHkMXKD9AKyF4e0U/Y8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -314,7 +314,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			v/4tNEdzMMZ9v+BQG1MUzWRa9K+U0plLUSdh4e8mrXY=
+			W6mKIQUlajVzn2zGbFarUntqnNCE38ruEIysejpVYjQ=
 			</data>
 		</dict>
 		<key>Modules/DIGIPROSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
@@ -349,7 +349,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			sJEpE9n0dChmpY8+ATpTn9IWS8roXIi61YAyLq/tlgk=
+			XBBC4HVUnlx6oD+WguN1XovjX9uWScIklLOa0CEu2wo=
 			</data>
 		</dict>
 		<key>Modules/DIGIPROSDK.swiftmodule/x86_64.swiftdoc</key>
@@ -370,7 +370,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			sJEpE9n0dChmpY8+ATpTn9IWS8roXIi61YAyLq/tlgk=
+			XBBC4HVUnlx6oD+WguN1XovjX9uWScIklLOa0CEu2wo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
