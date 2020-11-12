@@ -82,43 +82,43 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Is5impcTCgaT3ZIDfmYq4msOmP4=
+		chiW/8TeQg4iCK66DFoKxHl3L+A=
 		</data>
 		<key>LVggHCUtgyXTuIH.nib</key>
 		<data>
-		RQq+4O6UXW+gMZIv70CBOavvzLk=
+		bxnoVmli3dlMackL9NDaEoNYUig=
 		</data>
 		<key>Modules/DIGIPROSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		ao7M2qXgNKrad4iz1PohyHWiUA4=
+		V4cBYe7h00YfG6pXRKlmuvW2wo0=
 		</data>
 		<key>Modules/DIGIPROSDK.swiftmodule/Project/x86_64.swiftsourceinfo</key>
 		<data>
-		ao7M2qXgNKrad4iz1PohyHWiUA4=
+		V4cBYe7h00YfG6pXRKlmuvW2wo0=
 		</data>
 		<key>Modules/DIGIPROSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		cG4H68FxqIRozNOiEwKfUmMpo5s=
+		UZtAJJtfc87PyufG52xZ+dWVkZE=
 		</data>
 		<key>Modules/DIGIPROSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		cHpMN10hD+dVnOy99F1WkwkTDgc=
+		hXsOlmLAZ47GP9W2IX0VnUqUcbQ=
 		</data>
 		<key>Modules/DIGIPROSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		+Ihdr0S/hHkMXKD9AKyF4e0U/Y8=
+		Gdl6eD2TAepQkgh6m+iExokNYx8=
 		</data>
 		<key>Modules/DIGIPROSDK.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		cG4H68FxqIRozNOiEwKfUmMpo5s=
+		UZtAJJtfc87PyufG52xZ+dWVkZE=
 		</data>
 		<key>Modules/DIGIPROSDK.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		cHpMN10hD+dVnOy99F1WkwkTDgc=
+		hXsOlmLAZ47GP9W2IX0VnUqUcbQ=
 		</data>
 		<key>Modules/DIGIPROSDK.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		+Ihdr0S/hHkMXKD9AKyF4e0U/Y8=
+		Gdl6eD2TAepQkgh6m+iExokNYx8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -314,63 +314,63 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			W6mKIQUlajVzn2zGbFarUntqnNCE38ruEIysejpVYjQ=
+			sF3lwXb6Hs540fitjyyDXoR4JmJsWr1ToQkMOVMr9WE=
 			</data>
 		</dict>
 		<key>Modules/DIGIPROSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SY+962p4Y8b4YO1ut69jdupGp35nfEDfZilhqMKzKmU=
+			D+jVhL6pStc+NUu8tu6XOgDwt4Vhp6MNOMSLFTEIXMw=
 			</data>
 		</dict>
 		<key>Modules/DIGIPROSDK.swiftmodule/Project/x86_64.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SY+962p4Y8b4YO1ut69jdupGp35nfEDfZilhqMKzKmU=
+			D+jVhL6pStc+NUu8tu6XOgDwt4Vhp6MNOMSLFTEIXMw=
 			</data>
 		</dict>
 		<key>Modules/DIGIPROSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			OJlrMr+D7Men+EE9RNP/j9fwpt4My71LdaRw63G5Vl8=
+			cMEflXwkXJRV6b+kiGNBMQ3yY9o1PHEsS4FTVwrDD4c=
 			</data>
 		</dict>
 		<key>Modules/DIGIPROSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FIH073RwB6jIV2F+tl+ekdX3fKFSm/JQxTvDLDbGPCY=
+			OyNUYd5NeKOhYhIrt7YeseGj6VyGurUcdchQgH8ExL4=
 			</data>
 		</dict>
 		<key>Modules/DIGIPROSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XBBC4HVUnlx6oD+WguN1XovjX9uWScIklLOa0CEu2wo=
+			vwK7xcf2mn5Vd8F8bDYGfbi1k2iME82b/gfHq/V/qoM=
 			</data>
 		</dict>
 		<key>Modules/DIGIPROSDK.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			OJlrMr+D7Men+EE9RNP/j9fwpt4My71LdaRw63G5Vl8=
+			cMEflXwkXJRV6b+kiGNBMQ3yY9o1PHEsS4FTVwrDD4c=
 			</data>
 		</dict>
 		<key>Modules/DIGIPROSDK.swiftmodule/x86_64.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FIH073RwB6jIV2F+tl+ekdX3fKFSm/JQxTvDLDbGPCY=
+			OyNUYd5NeKOhYhIrt7YeseGj6VyGurUcdchQgH8ExL4=
 			</data>
 		</dict>
 		<key>Modules/DIGIPROSDK.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XBBC4HVUnlx6oD+WguN1XovjX9uWScIklLOa0CEu2wo=
+			vwK7xcf2mn5Vd8F8bDYGfbi1k2iME82b/gfHq/V/qoM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

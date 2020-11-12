@@ -3285,7 +3285,6 @@ public protocol FormularioDelegate : AnyObject {
   func obtainMathematics(_ element: Swift.String, _ isForced: Swift.Bool?)
   func valueElementRow(_ idElem: Swift.String) -> Swift.String
   func valueMetaElementRow(_ idElem: Swift.String, _ isCombo: Swift.String?) -> (value: Swift.String, row: Eureka.BaseRow)
-  func reloadContentCombos(_ index: Swift.Int)
   func updateDataComboDinamico(idsCombo: [(id: Swift.String, row: Eureka.BaseRow)])
   func isfilter(idElement: Swift.String) -> Swift.String
   func setDataAttributes(valor l: Swift.String, metadato m: Swift.String, habilitado h: Swift.Bool, visible v: Swift.Bool) -> Foundation.NSMutableDictionary
@@ -3437,7 +3436,7 @@ extension APIManager {
 }
 extension APIManager {
   final public func DGSDKdownloadVariables(delegate: Delegate?) -> DIGIPROSDK.Promise<DIGIPROSDK.APISuccessResponse>
-  final public func DGSDKdownloadCatRemoto(delegate: Delegate?, catRemoto: DIGIPROSDK.FECatRemoto) -> DIGIPROSDK.FECatRemotoData?
+  final public func DGSDKdownloadCatRemoto(delegate: Delegate?) -> DIGIPROSDK.FECatRemotoData?
   final public func validVariablesOffline() -> Swift.Bool
   final public func salvarVariable(delegate: Delegate?, data: Swift.String)
 }
