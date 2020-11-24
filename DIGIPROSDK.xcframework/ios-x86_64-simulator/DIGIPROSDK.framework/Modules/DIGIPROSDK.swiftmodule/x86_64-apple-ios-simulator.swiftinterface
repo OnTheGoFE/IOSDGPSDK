@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.3 (swiftlang-1200.0.29.2 clang-1200.0.30.1)
+// swift-compiler-version: Apple Swift version 5.3.1 (swiftlang-1200.0.41 clang-1200.0.32.8)
 // swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name DIGIPROSDK
 import AVFoundation
 import Accelerate
@@ -2720,6 +2720,7 @@ open class Interface : Swift.CustomStringConvertible, Swift.CustomDebugStringCon
   @objc public var CatDocId: Swift.Int
   @objc public var ProyectoId: Swift.Int
   @objc public var GrupoAdminID: Swift.Int
+  @objc public var Top: Swift.Int
   @objc deinit
   @objc required dynamic public init()
 }
@@ -5309,6 +5310,7 @@ public enum ApiErrors : Swift.Int {
   case noFormat
   case noData
   case connection
+  case errorTotal
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -5710,6 +5712,47 @@ public class HeroParser {
   public init(tokens: [DIGIPROSDK.Token])
   public func parse() throws -> [DIGIPROSDK.ExprNode]
   @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class Atributos_OCR : DIGIPROSDK.Atributos_Generales {
+  @objc public var alineadotexto: Swift.String
+  @objc public var assemblypath: Swift.String
+  @objc public var ayuda: Swift.String
+  @objc public var bindcondition: Swift.Bool
+  @objc public var campo: Swift.String
+  @objc public var campocss: Swift.String
+  @objc public var colorbotoncorreccion: Swift.String
+  @objc public var colorbotoncorrecciontexto: Swift.String
+  @objc public var colorbotonocr: Swift.String
+  @objc public var colorbotonocrtexto: Swift.String
+  @objc public var currentOCR: Swift.String
+  @objc public var decoraciontexto: Swift.String
+  @objc public var documents: Swift.String
+  @objc public var documentsminimal: Swift.String
+  @objc public var documentspaper: Swift.String
+  @objc public var elementopadre: Swift.String
+  @objc public var elementrendered: Swift.Bool
+  @objc public var estilotexto: Swift.String
+  @objc public var executeonce: Swift.Bool
+  @objc public var habilitado: Swift.Bool
+  @objc public var haserror: Swift.Bool
+  @objc public var idvalidation: Swift.String
+  @objc public var margenderecho: Swift.String
+  @objc public var margenizquierdo: Swift.String
+  @objc public var ocrgenerado: Swift.Bool
+  @objc public var ocultarsubtitulo: Swift.String
+  @objc public var passport: Swift.String
+  @objc public var permitircorreccion: Swift.Bool
+  @objc public var prefijo: Swift.String
+  @objc public var subtitulo: Swift.String
+  @objc public var textocorreccion: Swift.String
+  @objc public var textoocr: Swift.String
+  @objc public var tipo: Swift.String
+  @objc public var validationerror: Swift.String
+  @objc public var visible: Swift.Bool
+  @objc public var visiblecontenido: Swift.Bool
+  @objc override public func skipPropertyValue(_ value: Any, key: Swift.String) -> Swift.Bool
+  @objc deinit
+  @objc required dynamic public init()
 }
 @objc @_inheritsConvenienceInitializers public class SepoMexResult : DIGIPROSDK.EVObject {
   @objc public var CodigoPostal: Swift.String
@@ -7101,6 +7144,7 @@ public class Obfuscator {
   @objc public var campo: Swift.String
   @objc public var campobusqueda: Swift.String
   @objc public var camposfiltros: [Foundation.NSMutableDictionary]
+  @objc public var cantidadopciones: Swift.Int
   @objc public var catalogodestino: [Any]
   @objc public var catalogofuente: Swift.String
   @objc public var decoraciontexto: Swift.String
