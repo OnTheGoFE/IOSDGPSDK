@@ -82,19 +82,19 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		J5Kz+OFUWpdT1Ll8s79tCvEkwv8=
+		Nmn3dYA9kpsOhSTkgIc3jA0bZ+c=
 		</data>
 		<key>LVggHCUtgyXTuIH.nib</key>
 		<data>
-		fjuLzicSjSIes8gYVzCger10ClA=
+		TSyjewqOCnQTGIM3dbQIKbilO5E=
 		</data>
 		<key>Modules/DIGIPROSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		5Yit6P2ynDiLQkrZIYENix0MgXY=
+		2Y9eO6GEjlb0LRYjPtDUNlQhRRg=
 		</data>
 		<key>Modules/DIGIPROSDK.swiftmodule/Project/x86_64.swiftsourceinfo</key>
 		<data>
-		5Yit6P2ynDiLQkrZIYENix0MgXY=
+		2Y9eO6GEjlb0LRYjPtDUNlQhRRg=
 		</data>
 		<key>Modules/DIGIPROSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -106,7 +106,7 @@
 		</data>
 		<key>Modules/DIGIPROSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		seQJnoTkAlQhIMUgDnDmj7nNn+g=
+		qOEWoWFFVvbPJNgFjFlWkBxgzyo=
 		</data>
 		<key>Modules/DIGIPROSDK.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -118,7 +118,7 @@
 		</data>
 		<key>Modules/DIGIPROSDK.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		seQJnoTkAlQhIMUgDnDmj7nNn+g=
+		qOEWoWFFVvbPJNgFjFlWkBxgzyo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -314,21 +314,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			YvmXAFcJB5L7oseAHMuK8OfxCtQz5Tloa5tDxBsA1xg=
+			ifSc2vuVN2mvRSkW+v2R6Y1iSDnaA4VrD+6OIKH/tW0=
 			</data>
 		</dict>
 		<key>Modules/DIGIPROSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bc2iy/UW2iiKUTMfKU9LRpkOlTA7CfyV2mNu1vUG4tM=
+			/zwmf0mZuK7LrbYb0yH/VwkleblKB24J4U7IeFeDs4s=
 			</data>
 		</dict>
 		<key>Modules/DIGIPROSDK.swiftmodule/Project/x86_64.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bc2iy/UW2iiKUTMfKU9LRpkOlTA7CfyV2mNu1vUG4tM=
+			/zwmf0mZuK7LrbYb0yH/VwkleblKB24J4U7IeFeDs4s=
 			</data>
 		</dict>
 		<key>Modules/DIGIPROSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -349,7 +349,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5wLRNuDr3+8bk90IpYvx1sYGCMZwgaZo9eaBrm2kCo4=
+			R1TvTcGNgg5qGXOz3o2aYL+8djdQ0zmlI1OdEPcVEU0=
 			</data>
 		</dict>
 		<key>Modules/DIGIPROSDK.swiftmodule/x86_64.swiftdoc</key>
@@ -370,7 +370,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5wLRNuDr3+8bk90IpYvx1sYGCMZwgaZo9eaBrm2kCo4=
+			R1TvTcGNgg5qGXOz3o2aYL+8djdQ0zmlI1OdEPcVEU0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
